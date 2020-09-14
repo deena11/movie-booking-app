@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/moviebookingapp?createDatabaseIfNotExist=true
+    username: root
+    password: root
+  data:
+    elasticsearch:
+      cluster-name: my-application
+      cluster-nodes: localhost:9300
+    
+  jpa:
+     properties:
+         hibernate:
+           hbm2ddl:
+               auto: update
+           dialect: org.hibernate.dialect.MySQL8Dialect
+  application:
+    name: movie-search-service
+security:
+  oauth2:
+    resource:
+        token-info-uri: http://localhost:8091/oauth/check_token
+    client:
+        client-id: client
+        client-secret: password
+server:
+  port: 8060

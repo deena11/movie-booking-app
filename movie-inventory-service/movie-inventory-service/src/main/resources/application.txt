@@ -1,0 +1,52 @@
+#spring.profiles.active=@activatedProperties@  
+#
+#
+#spring.security.user.name=Deena Bandhu
+#spring.security.user.password=m1053559
+#
+#
+#spring.datasource.url=jdbc:mysql://localhost:3306/movie_app?useSSL=true&serverTimezone=UTC
+#spring.datasource.username=root
+#spring.datasource.password=root
+#
+#
+#
+#spring.datasource.tomcat.max-wait=20000
+#spring.datasource.tomcat.max-active=50
+#spring.datasource.tomcat.max-idle=20
+#spring.datasource.tomcat.min-idle=15
+#
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+#spring.jpa.properties.hibernate.id.new_generator_mappings = false
+#spring.jpa.properties.hibernate.format_sql = true
+#spring.jpa.properties.hibernate.hbm2ddl.auto = update
+#
+#spring.jackson.serialization.fail-on-empty-beans=false
+#
+#logging.level.org.hibernate.SQL=DEBUG
+#logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+#
+#
+#logging.level.root=info
+#logging.level.com.example.movie-inventory-service==DEBUG
+#logging.pattern.console=%d{dd-MM-yyyy HH:mm:ss.SSS} %logger.%M - %msg%n
+#logging.level.io.swagger.models.parameters.AbstractSerializableParameter=ERROR
+#
+#app.development.title=Movie inventory service
+#app.development.project= Movie Booking App - java(Microservices)
+#app.development.version=1.0
+#app.development.environment=Local
+#app.development.licence=301 - java Microservices
+#app.development.contact=deena
+#app.development.description= This project contains API end points for the Movie inventory services.
+#
+#eureka.client.register-with-eureka=false
+#eureka.client.fetch-registry=false
+#
+#security.oauth2.resource.uri=http://localhost:8080/oauth/check_token
+#security.oauth2.resource.client.client-id=mobile
+#security.oauth2.resource.client.client-secret=pin
+#
+#
+#spring.application.name=movie-inventory
+#server.port=8081

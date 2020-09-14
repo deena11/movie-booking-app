@@ -1,0 +1,43 @@
+#zuul:
+#  sensitiveHeaders: 
+#  routes:
+#    booking-server:
+#      path: /booking-service/**
+#      serviceId: MOVIE-BOOKING-SERVICE
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
+
+#server:
+#  port: 8070
+
+#spring:
+#  application:
+#    name: zuul-service
+
+server:
+  port: 8070
+ 
+spring:
+  application:
+    name: zuul-service
+   
+zuul:
+  sensitiveHeaders:
+  routes:
+    booking-service:
+      path: /booking-service/**
+      serviceId: MOVIE-BOOKING-SERVICE
+    inventory-service:
+      path: /inventory-service/**
+      serviceId: MOVIE-INVENTORY-SERVICE
+    user-service:
+      path: /user-service/**
+      serviceId: USER-SERVICE
+    search-service:
+      path: /search-service/**
+      serviceId: MOVIE-SEARCH-SERVICE
